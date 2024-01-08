@@ -1,0 +1,23 @@
+.sidebar {
+  padding: 24px;
+  border-right: 1px solid #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  transform: rotate(-90deg);
+  width: 47px;
+  position: sticky;
+  bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+}

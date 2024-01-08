@@ -1,0 +1,50 @@
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 62px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.lineBottom, .lineTop {
+  width: 100%;
+  height: 8px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.lineBottom::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 100%;
+ background-color: #000;
+ transition: left 0.5s ease-in-out;
+}
+
+.lineTop {
+  background-color: #000;
+}
+
+.lineTop::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: left 0.5s ease-in-out;
+}
+
+.burger:hover .lineBottom::after, .burger:hover .lineTop::after {
+  left: 0;
+}
+
+
+
