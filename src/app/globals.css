@@ -35,19 +35,19 @@ main {
   padding-bottom: 40px;
 }
 
-.swiper-pagination {
+.testimonials-swiper>.swiper-pagination {
   bottom: 0 !important;
-  display: none;
   justify-content: center;
+  display: none;
 }
 
 @media (max-width: 768px) {
-  .swiper-pagination {
+  .testimonials-swiper>.swiper-pagination {
     display: flex;
   }
 }
 
-.swiper-pagination-bullets .swiper-pagination-bullet {
+.testimonials-swiper>.swiper-pagination-bullets .swiper-pagination-bullet {
   align-items: center;
   background-color: transparent;
   border: 1px solid var(--black);
@@ -63,6 +63,6 @@ main {
   width: 116px;
 }
 
-.swiper-pagination-bullets .swiper-pagination-bullet-active {
+.testimonials-swiper>.swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: var(--black);
 }

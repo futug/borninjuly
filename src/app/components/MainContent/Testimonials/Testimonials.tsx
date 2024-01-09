@@ -38,12 +38,12 @@ const Testimonials: FC<ITestimonials> = ({ testimonials }) => {
         </div>
       </div>
       <Swiper
+        className='testimonials-swiper'
         modules={[A11y, FreeMode, Keyboard, Navigation, Pagination, Autoplay]}
         spaceBetween={40}
         slidesPerView={1}
         breakpoints={{
           768: {
-            navigation: false,
             slidesPerView: 1,
           },
           1024: {
