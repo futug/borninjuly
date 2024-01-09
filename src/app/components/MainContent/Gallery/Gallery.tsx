@@ -10,6 +10,7 @@ interface IGalleryProps {
 const Gallery: FC<IGalleryProps> = ({ photos }) => {
   return (
     <section className={styles.gallery}>
+      <h2 className={styles.title}>Our <span>Team</span></h2>
       <div className={styles.photos}>
         {photos.map((photo, index) => (
           <div className={styles.item} key={index}>

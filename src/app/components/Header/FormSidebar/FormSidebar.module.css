@@ -1,0 +1,33 @@
+.formSidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 500px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  z-index: 99;
+  background-color: var(--background-start-hex);
+  border-left: 1px solid var(--black);
+  transition: all .3s ease-in-out;
+}
+
+.formSidebarOpen {
+  transform: translateX(0);  
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 525px) {
+  .formSidebar {
+    width: 100%;
+  }
+}

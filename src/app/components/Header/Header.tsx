@@ -1,10 +1,14 @@
+'use client';
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 import Logo from './Logo/Logo';
 import Burger from './Burger/Burger';
 import styles from './Header.module.css';
+import FormSidebar from './FormSidebar/FormSidebar';
+import { useState } from 'react';
 
 export const Header = () => {
+  const [isFormSidebarOpen, setIsFormSidebarOpen] = useState(false);
   const navLinks = [
     {
       name: 'Home',
@@ -27,7 +31,8 @@ export const Header = () => {
     <header className={styles.header}>
       <Logo />
       <Navbar linkArr={navLinks} />
-      <Burger />
+      <Burger setIsFormSidebarOpen={setIsFormSidebarOpen}/>
+      <FormSidebar isFormSidebarOpen={isFormSidebarOpen} setIsFormSidebarOpen={setIsFormSidebarOpen}/>
     </header>
   );
 };
