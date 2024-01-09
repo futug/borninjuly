@@ -95,3 +95,7 @@
   fill: var(--white);
   stroke: var(--black);
 }
+
+.swiperNavigation svg:hover {
+  fill: var(--black);
+}
