@@ -61,6 +61,7 @@
   line-height: 1.5;
   text-transform: uppercase;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .title span {
@@ -97,6 +98,24 @@
   background-color: white;
   border-top: 1px solid var(--black);
   border-left: 1px solid var(--black);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .swiperSlide {
+    height: 700px;
+  }
+
+  .swiperNavigation {
+    display: none;
+  }
+
+  .text {
+    display: none;
+  }
 }
 
 .swiperNavigation svg {
