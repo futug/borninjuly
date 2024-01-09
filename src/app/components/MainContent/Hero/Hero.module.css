@@ -1,0 +1,112 @@
+.hero {
+  margin-bottom: 150px;
+  border: 1px solid var(--black);
+}
+
+.swiperWrapper {
+  position: relative;
+}
+
+.swiperSlide {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.swiperSlide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.swiperSlide.active>img {
+  animation: zoomInOut 20s linear infinite;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.4s 0.25s ease, opacity 0.4s 0.25s ease;
+}
+
+.title {
+  color: var(--white);
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.title span {
+  font-weight: 700;
+}
+
+.text {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.button {
+  margin-top: 30px;
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.active>.overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.swiperNavigation {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  padding: 20px;
+  background-color: white;
+  border-top: 1px solid var(--black);
+  border-left: 1px solid var(--black);
+}
+
+.swiperNavigation svg {
+  fill: var(--white);
+  stroke: var(--black);
+  transition: 0.2s all ease-in-out;
+  width: 70px;
+  height: 70px;
+}
+
+.swiperNavigation svg:hover {
+  fill: var(--black);
+}

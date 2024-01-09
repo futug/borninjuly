@@ -1,33 +1,33 @@
-import React from 'react'
-import Navbar from './Navbar/Navbar'
-import Logo from './Logo/Logo'
-import Burger from './Burger/Burger'
-import styles from './Header.module.css'
+import React from 'react';
+import Navbar from './Navbar/Navbar';
+import Logo from './Logo/Logo';
+import Burger from './Burger/Burger';
+import styles from './Header.module.css';
 
 export const Header = () => {
   const navLinks = [
     {
       name: 'Home',
-      path: '/',
+      path: '#',
     },
     {
       name: 'About',
-      path: '/about',
+      path: '#',
     },
     {
       name: 'Contact',
-      path: '/contact',
+      path: '#',
     },
     {
       name: 'Blog',
-      path: '/blog',
-    }
-  ]
+      path: '#',
+    },
+  ];
   return (
     <header className={styles.header}>
-        <Logo />
-        <Navbar linkArr={navLinks}/>
-        <Burger />
+      <Logo />
+      <Navbar linkArr={navLinks} />
+      <Burger />
     </header>
-  )
-}
+  );
+};

@@ -7,6 +7,7 @@ import TeamPhoto from './TeamPhoto/TeamPhoto';
 import Testimonials from './Testimonials/Testimonials';
 import Gallery from './Gallery/Gallery';
 import Clients from './Clients/Clients';
+import Hero from './Hero/Hero';
 import photo1 from './Gallery/img/agency-gallery-img-1.jpg';
 import photo2 from './Gallery/img/agency-gallery-img-2.jpg';
 import photo3 from './Gallery/img/agency-gallery-img-3.jpg';
@@ -38,6 +39,7 @@ export const Maincontent = () => {
   return (
     <div className={styles.maincontent}>
       <Container padding='2rem' margin='0 auto'>
+        <Hero />
         <Features />
         <Projects />
         <TeamPhoto />

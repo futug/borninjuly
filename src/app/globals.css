@@ -31,7 +31,7 @@ main {
   display: flex;
 }
 
-.swiper-wrapper {
+.testimonials-swiper>.swiper-wrapper {
   padding-bottom: 40px;
 }
 
