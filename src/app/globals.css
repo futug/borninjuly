@@ -10,6 +10,7 @@
   --white: #ffffff;
   --violet: #4132b6;
 }
+
 /* 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -28,4 +29,40 @@ body {
 
 main {
   display: flex;
+}
+
+.swiper-wrapper {
+  padding-bottom: 40px;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+  display: none;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .swiper-pagination {
+    display: flex;
+  }
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--black);
+  border-radius: 5em;
+  display: flex;
+  height: 5px;
+  justify-content: center;
+  margin: 5px !important;
+  opacity: 1;
+  padding: 0;
+  position: relative;
+  transition: all .25s ease-out;
+  width: 116px;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: var(--black);
 }

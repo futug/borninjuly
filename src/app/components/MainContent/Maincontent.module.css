@@ -1,5 +1,10 @@
 .maincontent {
   margin-top: 94px;
-  width: 100%;
+  width: calc(100% - 96px);
 }
 
+@media (max-width: 1024px) {
+  .maincontent {
+    width: 100%;
+  }
+}
