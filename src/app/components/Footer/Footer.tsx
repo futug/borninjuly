@@ -5,7 +5,7 @@ import Chips from '../Chips/Chips'
 
 const Footer = () => {
   return (
-    <div>
+    <footer id='contacts'>
       <div className={styles.topRow}>
         <div>
           <h5 className={styles.title}>BORN <span>IN JULY</span></h5>
@@ -33,7 +33,7 @@ const Footer = () => {
           <Chips link="https://telegram.me/telegram">Telegram</Chips>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 

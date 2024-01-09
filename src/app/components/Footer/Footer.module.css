@@ -5,9 +5,7 @@
     line-height: 1.13333em;
     font-weight: 800;
     margin: 25px 0;
-    line-height:0;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
+    line-height: 100%;
 }
 
 .title > span {
@@ -69,3 +67,8 @@
   gap: 1rem;
 }
 
+@media (max-width: 525px) {
+  .links {
+    flex-wrap: wrap;
+  }
+}

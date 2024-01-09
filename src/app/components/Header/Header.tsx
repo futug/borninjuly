@@ -20,7 +20,7 @@ export const Header = () => {
     },
     {
       name: 'Contact',
-      path: '#',
+      path: '#contacts',
     },
     {
       name: 'Blog',
@@ -32,7 +32,7 @@ export const Header = () => {
       <Logo />
       <Navbar linkArr={navLinks} />
       <Burger setIsFormSidebarOpen={setIsFormSidebarOpen}/>
-      <FormSidebar isFormSidebarOpen={isFormSidebarOpen} setIsFormSidebarOpen={setIsFormSidebarOpen}/>
+      <FormSidebar linkArr={navLinks} isFormSidebarOpen={isFormSidebarOpen} setIsFormSidebarOpen={setIsFormSidebarOpen}/>
     </header>
   );
 };

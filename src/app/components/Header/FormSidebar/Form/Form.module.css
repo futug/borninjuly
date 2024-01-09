@@ -5,3 +5,11 @@
   width: 100%;
   padding: 3rem;
 }
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}

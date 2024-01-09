@@ -5,6 +5,12 @@
   margin-left: 42px;
 }
 
+@media (max-width: 525px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .link {
     font-size: 15px;
     line-height: 1em;
