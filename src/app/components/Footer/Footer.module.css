@@ -1,0 +1,71 @@
+.title {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 60px;
+    line-height: 1.13333em;
+    font-weight: 800;
+    margin: 25px 0;
+    line-height:0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.title > span {
+  font-weight: 400;
+}
+
+.mail {
+  font-size: 28px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cities {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.city {
+  max-width: 300px;
+}
+
+.cityTitle {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 28px;
+  line-height: 1.13333em;
+  font-weight: 800;
+  margin: 25px 0;
+  line-height:0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.adress {
+  font-size: 18px;
+}
+
+.phone {
+  margin-top: 1rem;
+  display: block;
+  font-size: 18px;
+}
+
+.bottomRow {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
