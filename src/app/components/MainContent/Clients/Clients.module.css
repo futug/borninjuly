@@ -1,0 +1,15 @@
+.clients {
+  margin-bottom: 150px;
+}
+
+.swiperSlide svg {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  fill: var(--black);
+  transition: 0.3s all ease-in-out;
+}
+
+.swiperSlide svg:hover {
+  fill: var(--violet);
+}

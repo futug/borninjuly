@@ -5,6 +5,14 @@ import Features from './Features/Features';
 import Projects from './Projects/Projects';
 import TeamPhoto from './TeamPhoto/TeamPhoto';
 import Testimonials from './Testimonials/Testimonials';
+import Gallery from './Gallery/Gallery';
+import Clients from './Clients/Clients';
+import photo1 from './Gallery/img/agency-gallery-img-1.jpg';
+import photo2 from './Gallery/img/agency-gallery-img-2.jpg';
+import photo3 from './Gallery/img/agency-gallery-img-3.jpg';
+import photo4 from './Gallery/img/agency-gallery-img-4.jpg';
+import photo5 from './Gallery/img/agency-gallery-img-5.jpg';
+import photo6 from './Gallery/img/agency-gallery-img-6.jpg';
 
 export const Maincontent = () => {
   const testimonials = [
@@ -25,6 +33,8 @@ export const Maincontent = () => {
     },
   ];
 
+  const photos = [photo1, photo2, photo3, photo4, photo5, photo6];
+
   return (
     <div className={styles.maincontent}>
       <Container padding='2rem' margin='0 auto'>
@@ -32,6 +42,8 @@ export const Maincontent = () => {
         <Projects />
         <TeamPhoto />
         <Testimonials testimonials={testimonials} />
+        <Gallery photos={photos} />
+        <Clients />
       </Container>
     </div>
   );

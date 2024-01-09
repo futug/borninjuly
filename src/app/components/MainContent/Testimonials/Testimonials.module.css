@@ -94,6 +94,7 @@
 .swiperNavigation svg {
   fill: var(--white);
   stroke: var(--black);
+  transition: 0.2s all ease-in-out;
 }
 
 .swiperNavigation svg:hover {

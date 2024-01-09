@@ -66,3 +66,7 @@ main {
 .testimonials-swiper>.swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: var(--black);
 }
+
+.testimonials-swiper>.swiper-pagination-bullets .swiper-pagination-bullet:hover {
+  background-color: var(--black);
+}
