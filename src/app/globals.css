@@ -19,12 +19,15 @@
     --background-end-rgb: 0, 0, 0;
   }
 } */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--background-start-hex);
   margin: 0;
   padding: 0;
+  
 }
 
 main {

@@ -1,6 +1,6 @@
 'use client'
 import { TextField, Button, Typography } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Form.module.css'
 import Chips from '@/app/components/Chips/Chips'
 import axios from 'axios'
@@ -32,6 +32,14 @@ export const Form = () => {
       setOpen(true);
     }
   }
+
+  useEffect(() => {
+    if (open) {
+      setTimeout(() => {
+        setOpen(false);
+      }, 3000);
+    }
+  })
 
   if (loading) {
     return <p>Loading...</p>;

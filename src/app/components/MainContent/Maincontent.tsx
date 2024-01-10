@@ -48,6 +48,7 @@ export const Maincontent = () => {
         <Testimonials testimonials={testimonials} />
         <Gallery photos={photos} />
         <Clients />
+        {/* <FAQ /> */}
         <Footer />
       </Container>
     </div>

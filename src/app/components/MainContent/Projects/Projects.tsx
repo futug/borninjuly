@@ -7,7 +7,7 @@ import agencyImg from './img/agency-port-list-img-3.jpg';
 
 const Projects = () => {
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id='projects'>
       <div className={styles.wrapper}>
         <div className={styles.left}>
           <h2 className={styles.title}>Projects</h2>

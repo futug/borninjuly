@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './Navbar/Navbar';
 import Logo from './Logo/Logo';
 import Burger from './Burger/Burger';
@@ -9,6 +9,14 @@ import { useState } from 'react';
 
 export const Header = () => {
   const [isFormSidebarOpen, setIsFormSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    if (isFormSidebarOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  })
   const navLinks = [
     {
       name: 'Home',
@@ -19,12 +27,12 @@ export const Header = () => {
       path: '#',
     },
     {
-      name: 'Contact',
-      path: '#contacts',
+      name: 'Projects',
+      path: '#projects',
     },
     {
-      name: 'Blog',
-      path: '#',
+      name: 'Contact',
+      path: '#contacts',
     },
   ];
   return (
