@@ -5,7 +5,7 @@ import Chips from '../Chips/Chips'
 
 const Footer = () => {
   return (
-    <footer id='contacts'>
+    <footer id='contacts' className={styles.footer}>
       <div className={styles.topRow}>
         <div>
           <h5 className={styles.title}>BORN <span>IN JULY</span></h5>
